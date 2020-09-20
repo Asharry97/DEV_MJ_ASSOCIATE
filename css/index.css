@@ -1,0 +1,190 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/** Done So that the Other Content are not overlapped due to Navbar [To be Fixed] */
+.navbar-component {
+    padding-bottom: 75px;
+}
+
+.navbar-nav > li:hover{
+    font-weight:bold;
+    /*border-bottom: solid 3px black;*/
+}
+
+/** Removing Extra Spaces in NavBar */
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    font-size: 0;
+}
+
+/** Removing Extra Spaces in NavBar */
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.image-slider-component {
+    height: 40%;
+}
+
+/** Might Like 
+.navbar a {
+    border: solid 1px black;
+}
+*/
+
+/** Cursor on UseFul Links */
+.useful-link-list li {
+    cursor: pointer;
+}
+
+.useful-link-list li:hover {
+    background-color: #fff;
+    font-weight:bold;
+    /* border-bottom: solid 2px black;*/
+}
+
+
+/*** Sub DropDown Menu 
+.sub-dropdown-menu:hover .sub-dropdown-menu-list {
+    display: block;
+}
+*/
+
+/** Footer Card Same BG Color */
+footer .card {
+    background-color: #f8f9fa!important;
+    border: none;
+}
+
+footer .card li{
+    border: none;
+    background-color: #f8f9fa!important;
+}
+
+footer .contactus-card li {
+    padding: 0%;
+    padding-top: 0.5rem;
+}
+
+footer .useful-links-card ul li a{
+  color: #000000;
+  text-decoration: none;
+}
+
+/** Show Google Maps */
+.google-maps-iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.google-maps-card {
+    height: 400px;
+}
+
+
+/*** WhatsApp Button ***/
+.whatsapp-float-btn {
+    position: fixed; /* Very Crucial */
+    width: 240px;
+    height: 60px;
+    left: 18px; 
+    bottom: 40px;
+    z-index: 3;
+    display: flex; /* Make It FlexBox */
+}
+
+.whatsapp-float-btn-icon {
+    height: 64px;
+    width: 64px;
+    bottom: 36px;
+    border-radius: 50%;
+    background-image: url(/images/icons/whatsapp_circle_outer_64_64.png);
+}
+
+.whatsapp-float-btn-icon:hover {
+    background-image: url(/images/icons/whatsapp_circle_inner_64_64.png);
+}
+
+.whatsapp-float-btn-text {
+    padding-left: 6px;
+    font-size: 16px;
+    color: #000000;
+}
+
+/** Table */
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table tr {
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: left;
+}
+
+table th {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        background-color: #000000;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: right;
+    }
+
+    table tbody tr td:first-child {
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
