@@ -48,13 +48,6 @@ body {
     /* border-bottom: solid 2px black;*/
 }
 
-
-/*** Sub DropDown Menu 
-.sub-dropdown-menu:hover .sub-dropdown-menu-list {
-    display: block;
-}
-*/
-
 /** Footer Card Same BG Color */
 footer .card {
     background-color: #f8f9fa!important;
@@ -85,7 +78,6 @@ footer .useful-links-card ul li a{
 .google-maps-card {
     height: 400px;
 }
-
 
 /*** WhatsApp Button ***/
 .whatsapp-float-btn {
@@ -187,4 +179,4 @@ table th {
     table td:last-child {
         border-bottom: 0;
     }
-}
+} 
